@@ -1,5 +1,37 @@
-node_modules
-dist
+# OS
 .DS_Store
 *.local
+
+# Logs
 *.log
+
+# Frontend (frontend/)
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Backend (backend/)
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Research data (ml/data/) — large labeled training/val/test image set,
+# not needed to run the app. Kept on disk locally; not committed to git.
+ml/data/
+
+# Editors
+.vscode/
+.idea/
